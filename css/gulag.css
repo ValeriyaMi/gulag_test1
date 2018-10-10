@@ -1,0 +1,47 @@
+
+.test-intro {
+    width: 200px;
+    margin: auto;
+    margin-top:10px;
+    border: 4px double black;
+    background: white;
+    padding: 50px;
+   }
+
+   h1 {
+     color: yellow;
+     margin: auto;
+     padding: 2px;
+    }
+
+  h2 {
+      color: white;
+      margin-top: auto;
+      padding: 2px;
+     }
+
+.button
+{
+  color: white;
+  margin-top: 5px;
+  padding: 2px;
+ }
+
+.zaga
+{
+      color: red; /* Красный цвет символов */
+      font-size: 200%; /* Размер шрифта в процентах */
+      font-family: serif; /* Шрифт с засечками */
+      position: relative; /* Относительное позиционирование */
+      top: 5px; /* Сдвиг сверху */
+}
+
+.list-group
+{
+      color: black;
+      font-size: 50%;
+      font-family: serif;
+      margin-top: 5px;
+      position: relative;
+      top: 5px;
+}
