@@ -23,7 +23,7 @@ background-image: url(atom/gulag3.jpeg);
   }
  </style>
 
- <span id="zaga"><h1 style="text-align:center" text-color: "white">Миссия: выжить в 1938 году в СССР
+ <span id="zaga"><h1 style="text-align:center" text-color: "white">Миссия: выжить в 1938 году в СССР</h1>
  </span>
 
 <div class="test-intro" style="width: 38rem;">
@@ -35,7 +35,7 @@ background-image: url(atom/gulag3.jpeg);
   </div>
 </div>
 
-<div class="test-intro" style="width: 38rem;">
+<div class="test-intro" style="width: 38rem;" id="q1">
   <img class="card-img-top" src="atom/gulag2.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">
@@ -43,23 +43,23 @@ background-image: url(atom/gulag3.jpeg);
       Вас предупредили, что вы - следующий в списках ГПУ, но сбежать вы не успели. час ночи, вы собираете вещи,
       и вдруг видите в окно черный воронок. Оттуда выбегают ГПУшники и устремляются в ваш подъезд. Ваши действия?</h5>
 
-      <input type="radio" id="choice2"
+      <p><input type="radio" id="choice2"
            name="contact" value="phone">
-          <label for="contactChoice2">Выключу свет, замру, сделаю вид, что меня нет дома</label>
-      <input type="radio" id="choice2"
+          <label for="contactChoice2">Выключу свет, замру, сделаю вид, что меня нет дома</label></p>
+      <p><input type="radio" id="choice2"
                name="contact" value="phone">
-              <label for="choice2">Схватив все, что успел собрать, убегу с черного хода</label>
-      <input type="radio" id="choice2" size="12"
+              <label for="choice2">Схватив все, что успел собрать, убегу с черного хода</label></p>
+      <p><input type="radio" id="choice2"
                        name="contact" value="phone">
-                      <label for="contactChoice2">Буду ждать своей участи: есть шанс сохранить здоровье</label>
-      <input type="radio" id="choice2"
+                      <label for="contactChoice2">Буду ждать своей участи: есть шанс сохранить здоровье</label></p>
+      <p><input type="radio" id="choice2"
                                name="contact" value="phone">
-                              <label for="contactChoice2">Понадеюсь, что не ко мне, и продолжу собирать вещи</label>
-      <input type="radio" id="choice2"
+                              <label for="contactChoice2">Понадеюсь, что не ко мне, и продолжу собирать вещи</label></p>
+      <p><input type="radio" id="choice2"
                                name="contact" value="phone">
-                              <label for="contactChoice2">Постучусь к соседям, они друзья, пустят!</label>
+                              <label for="contactChoice2">Постучусь к соседям, они друзья, пустят!</label></p>
 
-  <p><button type="button" class="btn btn-primary">Ответить</button></p>
+  <p><button type="button" class="btn btn-primary" onclick="showAnswer(1)">Ответить</button></p>
   </div>
 </div>
 
@@ -80,7 +80,7 @@ background-image: url(atom/gulag3.jpeg);
   <li class="list-group-item">Соглашусь. Этой же ночью увезу семью в другой город</li>
   <li class="list-group-item">Соглашусь: почему бы нет? Я никогда не был в Москве</li>
 </ul>
-    <p><a href="#" class="btn btn-primary">Ответить</a></p>
+    <p><a href="#" class="btn btn-primary" onclick="showAnswer(2)">Ответить</a></p>
   </div>
 </div>
 
@@ -98,7 +98,7 @@ background-image: url(atom/gulag3.jpeg);
   <li class="list-group-item">Смирюсь со своей судьбой</li>
   <li class="list-group-item">Подчинюсь: я же точно знаю, что ни в чем не виновен - разберутся, отпустят</li>
 </ul>
-    <p><a href="#" class="btn btn-primary">Ответить</a></p>
+    <p><a href="#" class="btn btn-primary" onclick="showAnswer(3)">Ответить</a></p>
   </div>
 </div>
 
@@ -115,7 +115,7 @@ background-image: url(atom/gulag3.jpeg);
   <li class="list-group-item">Постараюсь забыть прошлую жизнь, считать себя умершим для своих родным, а тело - не моим, а словно чужим</li>
   <li class="list-group-item right4">Буду готовить речь перед следователем, я должен доказать, что это все - безумие, я не виновен</li>
 </ul>
-    <p><a href="#" class="btn btn-primary">Ответить</a></p>
+    <p><a href="#" class="btn btn-primary" onclick="showAnswer(4)">Ответить</a></p>
   </div>
 </div>
 
@@ -128,12 +128,15 @@ background-image: url(atom/gulag3.jpeg);
 
 <script>
 
-var answers = [];
+var answers = ["Текст 1", "Текст 2", "Текст 3", "Текст 4"];
 
-$('li').on('click', function () {
-  if (answers[this.])
-  this.style.backgroundColor='blue';
-});
+function showAnswer(parametr) {
+  $('#q1 h5').text(answers[parametr-1]);
+  $('#q1 input, #q1 label').css('display','none');
+}
+
+
+
 
 
 
