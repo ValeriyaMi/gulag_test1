@@ -35,75 +35,119 @@ background-image: url(atom/gulag3.jpeg);
   </div>
 </div>
 
-<div class="test-intro" style="width: 38rem;">
+<div class="test-intro" style="width: 38rem;" id="q1">
   <img class="card-img-top" src="atom/gulag2.jpg" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Вы живете один, родственники - в другом городе.
+    <h5 class="card-title">
+      Вы живете один, родственники - в другом городе.
       Вас предупредили, что вы - следующий в списках ГПУ, но сбежать вы не успели. час ночи, вы собираете вещи,
       и вдруг видите в окно черный воронок. Оттуда выбегают ГПУшники и устремляются в ваш подъезд. Ваши действия?</h5>
-<ul class="list-group">
-  <li class="list-group-item false1">Выключу свет, замру, сделаю вид, что меня нет дома</li>
-  <li class="list-group-item right1">Схватив все, что успел собрать, убегу с черного хода</li>
-  <li class="list-group-item false1">Буду ждать своей участи: есть шанс сохранить здоровье</li>
-  <li class="list-group-item false1">Понадеюсь, что не ко мне, и продолжу собирать вещи</li>
-  <li class="list-group-item false1">Постучусь к соседям, они друзья, пустят!</li>
-</ul>
-  <p><button type="button" class="btn btn-primary">Ответить</button></p>
+
+      <p><input type="radio" id="choice2"
+           name="contact" value="phone">
+          <label for="contactChoice2">Выключу свет, замру, сделаю вид, что меня нет дома</label></p>
+      <p><input type="radio" id="choice2"
+               name="contact" value="phone">
+              <label for="choice2">Схватив все, что успел собрать, убегу с черного хода</label></p>
+      <p><input type="radio" id="choice2"
+                       name="contact" value="phone">
+                      <label for="contactChoice2">Буду ждать своей участи: есть шанс сохранить здоровье</label></p>
+      <p><input type="radio" id="choice2"
+                               name="contact" value="phone">
+                              <label for="contactChoice2">Понадеюсь, что не ко мне, и продолжу собирать вещи</label></p>
+      <p><input type="radio" id="choice2"
+                               name="contact" value="phone">
+                              <label for="contactChoice2">Постучусь к соседям, они друзья, пустят!</label></p>
+
+  <p><button type="button" class="btn btn-primary" onclick="showAnswer(1)">Ответить</button></p>
   </div>
 </div>
 
 
 
-<div class="test-intro" style="width: 38rem;">
+<div class="test-intro" style="width: 38rem;" id="q2">
   <img class="card-img-top" src="atom/gulag6.jpeg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">В последнее время к вам проявляет настойчивое внимание высокопоставленный чиновник:
       приглашает с семьей в гости, просит составить ему компанию в опере и на охоте. Сегодня он звонит вам и просит съездить с ним
     в Москву на конференцию. Отказаться немыслимо. Согласитесь?</h5>
-<ul class="list-group">
-  <li class="list-group-item">Просто скажу, что не могу</li>
-  <li class="list-group-item right2">Конечно, соглашусь: таким людям страшно отказывать</li>
-  <li class="list-group-item">Соглашусь, но в день поездки выпью йод с содой, скажу,
-    что неожиданно поднялась температура и поехать я не могу</li>
-  <li class="list-group-item">Соглашусь. Этой же ночью увезу семью в другой город</li>
-  <li class="list-group-item">Соглашусь: почему бы нет? Я никогда не был в Москве</li>
-</ul>
-    <p><a href="#" class="btn btn-primary">Ответить</a></p>
+
+    <p><input type="radio" id="choice2"
+         name="contact" value="phone">
+        <label for="contactChoice2">Просто скажу, что не могу</label></p>
+    <p><input type="radio" id="choice2"
+             name="contact" value="phone">
+            <label for="choice2">Конечно, соглашусь: таким людям страшно отказывать</label></p>
+    <p><input type="radio" id="choice2"
+                     name="contact" value="phone">
+                    <label for="contactChoice2">Соглашусь, но в день поездки выпью йод с содой, скажу,
+                      что неожиданно поднялась температура и поехать я не могу</label></p>
+    <p><input type="radio" id="choice2"
+                             name="contact" value="phone">
+                            <label for="contactChoice2">Соглашусь. Этой же ночью увезу семью в другой город</label></p>
+    <p><input type="radio" id="choice2"
+                             name="contact" value="phone">
+                            <label for="contactChoice2">Соглашусь: почему бы нет? Я никогда не был в Москве</label></p>
+
+    <p><button type="button" class="btn btn-primary" onclick="showAnswer(1)">Ответить</button></p>
   </div>
 </div>
 
 
-<div class="test-intro" style="width: 38rem;">
+<div class="test-intro" style="width: 38rem;" id="q3">
   <img class="card-img-top" src="atom/gulag4.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Вы идете на рынок. На улице, в толпе, к вам подходят двое крепких мужчин, хватают под руки и шепнув:
       "Госбезопасность, молчать" волокут к машине. Ваши действия?  </h5>
-<ul class="list-group">
-  <li class="list-group-item">Скорей всего, я испытаю шок и просто не сумею сопротивляться</li>
-  <li class="list-group-item">Буду просить показать документы</li>
-  <li class="list-group-item right3">Стану кричать "Грабеж!", вырвусь, ухвачусь за телеграфный столб,
-    чтобы только не попасть в машину</li>
-  <li class="list-group-item">Смирюсь со своей судьбой</li>
-  <li class="list-group-item">Подчинюсь: я же точно знаю, что ни в чем не виновен - разберутся, отпустят</li>
-</ul>
-    <p><a href="#" class="btn btn-primary">Ответить</a></p>
+
+      <p><input type="radio" id="choice2"
+           name="contact" value="phone">
+          <label for="contactChoice2">Скорей всего, я испытаю шок и просто не сумею сопротивляться</label></p>
+      <p><input type="radio" id="choice2"
+               name="contact" value="phone">
+              <label for="choice2">Буду просить показать документы</label></p>
+      <p><input type="radio" id="choice2"
+                       name="contact" value="phone">
+                      <label for="contactChoice2">Стану кричать "Грабеж!", вырвусь, ухвачусь за телеграфный столб,
+                        чтобы только не попасть в машину</label></p>
+      <p><input type="radio" id="choice2"
+                               name="contact" value="phone">
+                              <label for="contactChoice2">Смирюсь со своей судьбой</label></p>
+      <p><input type="radio" id="choice2"
+                               name="contact" value="phone">
+                              <label for="contactChoice2">Подчинюсь: я же точно знаю, что ни в чем не виновен - разберутся, отпустят</label></p>
+
+      <p><button type="button" class="btn btn-primary" onclick="showAnswer(1)">Ответить</button></p>
+
   </div>
 </div>
 
 
-<div class="test-intro" style="width: 38rem;">
+<div class="test-intro" style="width: 38rem;" id="q4">
   <img class="card-img-top" src="atom/gulag.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Вечер, вы в камере. Вся жизнь проносится перед глазами.
       Вы знаете, что скоро вызовут на допрос. Как подготовите себя? </h5>
-<ul class="list-group">
-  <li class="list-group-item">Никак - невозможно подготовиться к тому, с чем никогда раньше не сталкивался</li>
-  <li class="list-group-item">Буду думать, за что меня взяли и кто мог меня подставить - вдруг устроят очную ставку </li>
-  <li class="list-group-item">В голову не лезет ничего, кроме моей семьи, дома, моей загубленной жизни и страха перед болью</li>
-  <li class="list-group-item">Постараюсь забыть прошлую жизнь, считать себя умершим для своих родным, а тело - не моим, а словно чужим</li>
-  <li class="list-group-item right4">Буду готовить речь перед следователем, я должен доказать, что это все - безумие, я не виновен</li>
-</ul>
-    <p><a href="#" class="btn btn-primary">Ответить</a></p>
+
+
+      <p><input type="radio" id="choice2"
+           name="contact" value="phone">
+          <label for="contactChoice2">Никак - невозможно подготовиться к тому, с чем никогда раньше не сталкивался</label></p>
+      <p><input type="radio" id="choice2"
+               name="contact" value="phone">
+              <label for="choice2">Буду думать, за что меня взяли и кто мог меня подставить - вдруг устроят очную ставку</label></p>
+      <p><input type="radio" id="choice2"
+                       name="contact" value="phone">
+                      <label for="contactChoice2">В голову не лезет ничего, кроме моей семьи, дома, моей загубленной жизни и страха перед болью</label></p>
+      <p><input type="radio" id="choice2"
+                               name="contact" value="phone">
+                              <label for="contactChoice2">Постараюсь забыть прошлую жизнь, считать себя умершим для своих родным, а тело - не моим, а словно чужим</label></p>
+      <p><input type="radio" id="choice2"
+                               name="contact" value="phone">
+                              <label for="contactChoice2">Буду готовить речь перед следователем, я должен доказать, что это все - безумие, я не виновен</label></p>
+
+      <p><button type="button" class="btn btn-primary" onclick="showAnswer(1)">Ответить</button></p>
+
   </div>
 </div>
 
